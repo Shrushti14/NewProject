@@ -31,7 +31,7 @@ import { ScrollView } from "react-native-gesture-handler";
 import { useNavigation } from "@react-navigation/native";
 
 const SecondScreen = (props) => {
-  const navigation = useNavigation()
+  const navigation = useNavigation();
   return (
     <View>
       <StatusBar style="light" />
@@ -69,7 +69,7 @@ const SecondScreen = (props) => {
         <View style={styles.card}>
           <TouchableOpacity
             onPress={()=>{
-              navigation.push('Home');
+              navigation.navigate('BottomTabNavigator');
           }}
           >
             <Text style={styles.Start}>START YOUR FREE TRIAL</Text>
@@ -98,10 +98,7 @@ const SecondScreen = (props) => {
         </View> */}
 
         <View style={styles.iconException}>
-          <TouchableOpacity
-           onPress={() =>
-            props.navigation.navigate("BarExercise")}
-          >
+          <TouchableOpacity>
             <Image
               style={styles.facebookBackground}
               source={require("../../assets/img/SecondScreen/EllipseFacebook.png")}
@@ -111,10 +108,7 @@ const SecondScreen = (props) => {
               source={require("../../assets/img/SecondScreen/facebook.png")}
             />
           </TouchableOpacity>
-          <TouchableOpacity
-           onPress={() =>
-            props.navigation.navigate("SquartRound")}
-          >
+          <TouchableOpacity>
             <Image
               style={styles.twitterBackground}
               source={require("../../assets/img/SecondScreen/EllipseTwitter.png")}
@@ -183,7 +177,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     color: "white",
     marginTop: pixelNormalize(180),
-    marginLeft: pixelNormalize(370),
+    marginLeft: pixelNormalize(310),
     fontSize: pixelNormalize(130),
     fontFamily: 'OpenSansBold',
   },
@@ -191,7 +185,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     color: "#454545",
     marginTop: pixelNormalize(280),
-    marginLeft: pixelNormalize(370),
+    marginLeft: pixelNormalize(310),
     fontSize: pixelNormalize(150),
    fontFamily: 'OpenSansBold',
   },
@@ -199,7 +193,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     color: "#c2c2c2",
     marginTop: pixelNormalize(410),
-    marginLeft: pixelNormalize(370),
+    marginLeft: pixelNormalize(310),
     fontSize: pixelNormalize(150),
     fontFamily:'OswaldVariableFont', 
   },
@@ -207,7 +201,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     color: "white",
     marginTop: pixelNormalize(560),
-    marginLeft: pixelNormalize(370),
+    marginLeft: pixelNormalize(310),
     fontSize: pixelNormalize(140),
     fontFamily: 'OpenSansBold',
   },
@@ -215,7 +209,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     color: "white",
     marginTop: pixelNormalize(700),
-    marginLeft: pixelNormalize(370),
+    marginLeft: pixelNormalize(310),
     fontSize: pixelNormalize(150),
     fontFamily: 'OpenSansBold',
   },

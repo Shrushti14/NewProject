@@ -23,10 +23,12 @@ import { LinearGradient } from "expo-linear-gradient";
 import normalize from "react-native-normalize";
 import { pixelNormalize } from "../constants/Size";
 import { ScrollView } from "react-native-gesture-handler";
+import { useNavigation } from "@react-navigation/native";
 
 
 
 const HomeScreen = (props) => {
+  const navigation = useNavigation();
   return (
     <ScrollView style={styles.mainContainer}>
       <SafeAreaView>
@@ -98,7 +100,11 @@ const HomeScreen = (props) => {
               />
             </View>
           </View>
-          <TouchableOpacity>
+          <TouchableOpacity 
+          //   onPress={()=>{
+          //     navigation.navigate('Tab1Navigator');
+          // }}
+          >
             <View>
               <Image
                 style={styles.unsplash}
@@ -107,14 +113,18 @@ const HomeScreen = (props) => {
 
               <Image
                 style={styles.rectanglePlash}
-                source={require("../assets/img/ThirdScreen/RectangleOne.png")}
+                source={require("../../assets/img/ThirdScreen/RectangleOne.png")}
               />
 
               <Text style={styles.exercise}>Bar Shoulder{"\n"}Exercise</Text>
             </View>
           </TouchableOpacity>
 
-          <TouchableOpacity>
+          <TouchableOpacity
+          //     onPress={()=>{
+          //     navigation.push('Tab2Navigator');
+          // }}
+          >
             <View>
               <Image
                 style={styles.dumlao}
@@ -130,7 +140,11 @@ const HomeScreen = (props) => {
             </View>
           </TouchableOpacity>
 
-          <TouchableOpacity>
+          <TouchableOpacity
+        //    onPress={()=>{
+        //     navigation.push('Tab3Navigator');
+        // }}
+        >
           
             <View>
               <Image
@@ -146,7 +160,11 @@ const HomeScreen = (props) => {
             </View>
           </TouchableOpacity>
 
-          <TouchableOpacity>
+          <TouchableOpacity
+          //   onPress={()=>{
+          //     navigation.push('Tab4Navigator');
+          // }}
+          >
             <View>
               <Image
                 style={styles.anastase}
