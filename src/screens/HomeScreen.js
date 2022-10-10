@@ -101,9 +101,9 @@ const HomeScreen = (props) => {
             </View>
           </View>
           <TouchableOpacity 
-          //   onPress={()=>{
-          //     navigation.navigate('Tab1Navigator');
-          // }}
+           onPress={()=>{
+            navigation.push('Bar Shoulder Exercise');
+        }}
           >
             <View>
               <Image
@@ -121,9 +121,9 @@ const HomeScreen = (props) => {
           </TouchableOpacity>
 
           <TouchableOpacity
-          //     onPress={()=>{
-          //     navigation.push('Tab2Navigator');
-          // }}
+           onPress={()=>{
+            navigation.push('Squart Round Bar');
+        }}
           >
             <View>
               <Image
@@ -141,9 +141,9 @@ const HomeScreen = (props) => {
           </TouchableOpacity>
 
           <TouchableOpacity
-        //    onPress={()=>{
-        //     navigation.push('Tab3Navigator');
-        // }}
+          onPress={()=>{
+            navigation.push('Yoga Exercise');
+        }}
         >
           
             <View>
@@ -161,9 +161,9 @@ const HomeScreen = (props) => {
           </TouchableOpacity>
 
           <TouchableOpacity
-          //   onPress={()=>{
-          //     navigation.push('Tab4Navigator');
-          // }}
+           onPress={()=>{
+            navigation.push('Bar Deep Exercise');
+        }}
           >
             <View>
               <Image

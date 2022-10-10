@@ -24,6 +24,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { ScrollView } from "react-native-gesture-handler";
 import normalize from "react-native-normalize";
 import { pixelNormalize } from "../constants/Size";
+import { useNavigation } from "@react-navigation/native";
 
 
 // const DATA = [
@@ -74,6 +75,7 @@ import { pixelNormalize } from "../constants/Size";
 //   },
 // ]
 const WorkoutScreen = () => {
+  const navigation = useNavigation();
   return (
     <LinearGradient
       colors={["#1B1B1B", "#1A1A1A"]}
@@ -105,7 +107,11 @@ const WorkoutScreen = () => {
           </FlatList> */}
             <>
             <View>
-            <TouchableOpacity>
+            <TouchableOpacity
+             onPress={()=>{
+              navigation.push('WorkOut 1');
+          }}
+            >
               <Image
                 style={styles.logan}
                 source={require("../../assets/img/FourthScreen/unsplash.png")}
@@ -130,7 +136,11 @@ const WorkoutScreen = () => {
           </View>
 
           <View>
-            <TouchableOpacity>
+            <TouchableOpacity
+            onPress={()=>{
+              navigation.push('WorkOut 2');
+          }}
+          >
               <Image
                 style={styles.logan}
                 source={require("../../assets/img/FourthScreen/loganWeaver.png")}
@@ -155,7 +165,11 @@ const WorkoutScreen = () => {
           </View>
 
           <View>
-            <TouchableOpacity>
+            <TouchableOpacity
+             onPress={()=>{
+              navigation.push('WorkOut 3');
+          }}
+            >
               <Image
                 style={styles.logan}
                 source={require("../../assets/img/FourthScreen/freitas.png")}
@@ -180,7 +194,11 @@ const WorkoutScreen = () => {
           </View>
 
           <View>
-            <TouchableOpacity>
+            <TouchableOpacity
+             onPress={()=>{
+              navigation.push('WorkOut 4');
+          }}
+          >
               <Image
                 style={styles.logan}
                 source={require("../../assets/img/FourthScreen/pexels.png")}
@@ -205,7 +223,11 @@ const WorkoutScreen = () => {
           </View>
 
           <View>
-            <TouchableOpacity>
+            <TouchableOpacity
+             onPress={()=>{
+              navigation.push('WorkOut 5');
+          }}
+          >
               <Image
                 style={styles.logan}
                 source={require("../../assets/img/FourthScreen/maragos.png")}
@@ -292,16 +314,16 @@ const styles = StyleSheet.create({
   lie: {
     fontSize: pixelNormalize(40),
     fontFamily: "OpenSansSemibold",
-    color: "white",
     bottom: pixelNormalize(100),
     marginLeft: pixelNormalize(130),
+    color: "white",
   },
   workoutOne: {
     fontSize: pixelNormalize(40),
     fontFamily: "OpenSansSemibold",
-    color: "white",
     bottom: pixelNormalize(100),
     marginLeft: pixelNormalize(500),
+    color: "white",
   },
 
   logan: {
@@ -336,9 +358,9 @@ const styles = StyleSheet.create({
   doe: {
     fontSize: pixelNormalize(40),
     fontFamily: "OpenSansSemibold",
-    color: "white",
     bottom: pixelNormalize(100),
     marginLeft: pixelNormalize(109),
+    color: "white",
   },
   workoutTwo: {
     fontSize: pixelNormalize(40),
