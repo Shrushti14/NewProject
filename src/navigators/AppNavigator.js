@@ -8,7 +8,7 @@ import BarExercise from "../screens/BarExercise";
 import BottomTabNavigator from "./BottomTabNavigator";
 import SquartRound from "../screens/SquartRound";
 import YogaExercise from "../screens/YogaExercise";
-import { collapsable } from "deprecated-react-native-prop-types/DeprecatedViewPropTypes";
+// import { collapsable } from "../sdeprecated-react-native-prop-types/DeprecatedViewPropTypes";
 import WorkOutOneScreen from "../screens/WorkOutOneScreen";
 import WorkOutTwoScreen from "../screens/WorkOutTwoScreen";
 import WorkOutThreeScreen from "../screens/WorkOutThreeScreen";

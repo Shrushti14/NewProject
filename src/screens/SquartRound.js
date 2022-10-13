@@ -11,9 +11,9 @@ const SquartRound = () => {
     <StatusBar style= 'auto' />
     <LinearGradient
       colors={["#1B1B1B",'#1A1A1A']}
-      style={styles.MainContainer}
+      style={styles.mainContainer}
     >
-      
+        constants/Size
         <View style={styles.screen}>
           {/* <TouchableOpacity
             onPress={() =>
@@ -24,7 +24,7 @@ const SquartRound = () => {
           </TouchableOpacity>
           <Text style={styles.innerText}>Squart Round Bar</Text>
           <AntDesign
-            style={styles.appstore}
+            style={styles.appStore}
             name="appstore-o"
             size={30}
             color="red"
@@ -100,7 +100,7 @@ const SquartRound = () => {
 };
 export default SquartRound;
 const styles = StyleSheet.create({
-  MainContainer: {
+  mainContainer: {
     flex: 1,
     height: pixelNormalize(2436),
     width: pixelNormalize(1125),
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     marginTop: pixelNormalize(145),
     marginLeft: pixelNormalize(40),
   },
-  appstore: {
+  appStore: {
     marginTop: pixelNormalize(147),
     marginLeft: pixelNormalize(140),
   },
